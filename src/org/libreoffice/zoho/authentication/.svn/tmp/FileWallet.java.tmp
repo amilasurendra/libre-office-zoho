@@ -1,0 +1,216 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package org.libreoffice.zoho.authentication;
+
+/**
+ *
+ * @author amila
+ */
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import org.libreoffice.zoho.config.Configuration;
+
+public class FileWallet {
+
+    private static final String SECRET = "DefSwiudIUHS";
+<<<<<<< .working
+    private String credentionalsFileName;
+    private String writer;
+    private String presentation;
+    private String spreadsheet;
+    private String username;
+    private String password;
+    private static FileWallet instance = null;
+=======
+    private String username;
+    private String password;
+    String credentionalsFileName = Configuration.getInstance().getWorkingPath() + "/credentials.dat";
+>>>>>>> .merge-right.r19
+
+<<<<<<< .working
+    public static synchronized FileWallet getInstance() {
+        if (instance == null) {
+            instance = new FileWallet();
+        }
+        return instance;
+    }
+=======
+>>>>>>> .merge-right.r19
+
+<<<<<<< .working
+    private FileWallet() {
+
+        credentionalsFileName = Configuration.getInstance().getWorkingPath() + "/credentials.dat";
+        File file = new File(credentionalsFileName);
+
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+            } catch (IOException ex) {
+                Logger.log(ex.getMessage());
+            }
+        } else {
+            readCreditionals();
+        }
+    }
+
+=======
+>>>>>>> .merge-right.r19
+    public String getPassword() {
+<<<<<<< .working
+        return xorString(password);
+=======
+        readCreditionals();
+        return password;
+>>>>>>> .merge-right.r19
+    }
+
+<<<<<<< .working
+    public String getUserName() {
+        return xorString(username);
+=======
+    public String getUsername() {
+        readCreditionals();
+        return username;
+>>>>>>> .merge-right.r19
+    }
+
+
+<<<<<<< .working
+        switch (type) {
+            case Writer:
+                ticket = writer;
+                break;
+            case Presentation:
+                ticket = presentation;
+                break;
+            case SpreadSheet:
+                ticket = spreadsheet;
+                break;
+=======
+    
+>>>>>>> .merge-right.r19
+    private  boolean readCreditionals() {
+
+<<<<<<< .working
+        return xorString(ticket);
+    }
+
+    private void readCreditionals() {
+
+        File file = new File(credentionalsFileName);
+
+=======
+        boolean result = false;
+>>>>>>> .merge-right.r19
+        try {
+<<<<<<< .working
+            FileInputStream fis = new FileInputStream(file);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            wallet = (FileWallet) ois.readObject();
+        } catch (Exception e) {
+            System.err.println("readCreditionals");
+            e.printStackTrace();
+=======
+            File file = new File(credentionalsFileName);
+            if (file.exists()) {
+                FileReader fr = new FileReader(credentionalsFileName);
+                BufferedReader br = new BufferedReader(fr);
+                char[] buf = new char[1024];
+                int length = br.read(buf);
+
+                br.close();
+                String decoded = xorString(new String(buf, 0, length), SECRET);
+                String[] lines = decoded.split("\n");
+                username = lines[0];
+                password = lines[1];
+                result = true;
+            }
+        } catch (IOException e) {
+>>>>>>> .merge-right.r19
+        }
+        return result;
+    }
+
+    public   void storeCreditionals(String username, String password) {
+
+        try {
+<<<<<<< .working
+            file.createNewFile();
+            FileOutputStream fos = new FileOutputStream(file);
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+            oos.writeObject(wallet);
+            oos.close();
+            fos.close();
+        } catch (FileNotFoundException fnfe) {
+        } catch (IOException ioe) {
+            Logger.log("Cannot create credentials file on : " + file.getAbsolutePath() + " Please check permissions");
+            System.out.println(ioe.getMessage());
+            ioe.printStackTrace();
+=======
+            FileWriter fw = new FileWriter(credentionalsFileName);
+            BufferedWriter bw = new BufferedWriter(fw);
+            String str = username + "\n" + password;
+            bw.write(xorString(str, SECRET));
+            bw.close();
+        } catch (IOException e) {
+>>>>>>> .merge-right.r19
+        }
+    }
+
+    private String xorString(String phrase) {
+        if(phrase == null) return null;
+        char[] keyChars = SECRET.toCharArray();
+        char[] inputChars = phrase.toCharArray();
+        for (int i = 0; i < inputChars.length; i++) {
+            inputChars[i] ^= keyChars[i % keyChars.length];
+        }
+        return new String(inputChars);
+    }
+<<<<<<< .working
+
+    public void setPassword(String password) {
+        password = xorString(password);
+        this.password = password;
+        storeCreditionals();
+    }
+
+    public void setUserName(String username) {
+        username = xorString(username);
+        this.username = username;
+        storeCreditionals();
+    }
+
+    public void setTicket(ticketType type, String ticket) {
+
+        ticket = xorString(ticket);
+
+        switch (type) {
+            case Writer:
+                writer = ticket;
+                break;
+            case Presentation:
+                presentation = ticket;
+                break;
+            case SpreadSheet:
+                spreadsheet = ticket;
+                break;
+
+        }
+        storeCreditionals();
+    }
+=======
+>>>>>>> .merge-right.r19
+}
+<<<<<<< .working
+
+class Credentials implements Serializable{
+
+}=======
+>>>>>>> .merge-right.r19

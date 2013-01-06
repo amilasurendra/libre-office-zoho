@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="Addons" oor:package="org.openoffice.Office">
+  <node oor:name="AddonUI">
+    <node oor:name="OfficeMenuBar">
+      <node oor:name="org.libreoffice.zoho.zoho" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value/>
+          <value xml:lang="en">Zoho</value>
+        </prop>
+        <prop oor:name="Target" oor:type="xs:string">
+          <value>_self</value>
+        </prop>
+        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+          <value/>
+        </prop>
+        <node oor:name="Submenu">
+          <node oor:name="m1" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>org.libreoffice.zoho.zoho:Import</value>
+            </prop>
+            <prop oor:name="ImageIdentifier" oor:type="xs:string">
+              <value/>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.text.TextDocument</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value/>
+              <value xml:lang="en">Import</value>
+            </prop>
+          </node>
+          <node oor:name="m2" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>org.libreoffice.zoho.zoho:Export</value>
+            </prop>
+            <prop oor:name="ImageIdentifier" oor:type="xs:string">
+              <value/>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.text.TextDocument</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value/>
+              <value xml:lang="en">Export</value>
+            </prop>
+          </node>
+          <node oor:name="m3" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>org.libreoffice.zoho.zoho:Share</value>
+            </prop>
+            <prop oor:name="ImageIdentifier" oor:type="xs:string">
+              <value/>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.text.TextDocument</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value/>
+              <value xml:lang="en">Share</value>
+            </prop>
+          </node>
+          <node oor:name="m4" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>org.libreoffice.zoho.zoho:Options</value>
+            </prop>
+            <prop oor:name="ImageIdentifier" oor:type="xs:string">
+              <value/>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.text.TextDocument</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value/>
+              <value xml:lang="en">Options</value>
+            </prop>
+          </node>
+	  <node oor:name="m5" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>org.libreoffice.zoho.zoho:Local</value>
+            </prop>
+            <prop oor:name="ImageIdentifier" oor:type="xs:string">
+              <value/>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.presentation.PresentationDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.text.TextDocument</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value/>
+              <value xml:lang="en">Local</value>
+            </prop>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node oor:name="OfficeToolBar">
+      <node oor:name="org.libreoffice.zoho.zoho" oor:op="replace">
+      <node oor:name="m1" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>org.libreoffice.zoho.zoho:Import</value>
+        </prop>
+        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+          <value/>
+        </prop>
+        <prop oor:name="Target" oor:type="xs:string">
+          <value>_self</value>
+        </prop>
+        <prop oor:name="Context" oor:type="xs:string">
+          <value>com.sun.star.presentation.PresentationDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.text.TextDocument</value>
+        </prop>
+        <prop oor:name="Title" oor:type="xs:string">
+          <value/>
+          <value xml:lang="en">Import</value>
+        </prop>
+      </node>
+      <node oor:name="m2" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>org.libreoffice.zoho.zoho:Export</value>
+        </prop>
+        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+          <value/>
+        </prop>
+        <prop oor:name="Target" oor:type="xs:string">
+          <value>_self</value>
+        </prop>
+        <prop oor:name="Context" oor:type="xs:string">
+          <value>com.sun.star.presentation.PresentationDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.text.TextDocument</value>
+        </prop>
+        <prop oor:name="Title" oor:type="xs:string">
+          <value/>
+          <value xml:lang="en">Export</value>
+        </prop>
+      </node>
+      <node oor:name="m3" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>org.libreoffice.zoho.zoho:Share</value>
+        </prop>
+        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+          <value/>
+        </prop>
+        <prop oor:name="Target" oor:type="xs:string">
+          <value>_self</value>
+        </prop>
+        <prop oor:name="Context" oor:type="xs:string">
+          <value>com.sun.star.presentation.PresentationDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.text.TextDocument</value>
+        </prop>
+        <prop oor:name="Title" oor:type="xs:string">
+          <value/>
+          <value xml:lang="en">Share</value>
+        </prop>
+      </node>
+      <node oor:name="m4" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>org.libreoffice.zoho.zoho:Options</value>
+        </prop>
+        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+          <value/>
+        </prop>
+        <prop oor:name="Target" oor:type="xs:string">
+          <value>_self</value>
+        </prop>
+        <prop oor:name="Context" oor:type="xs:string">
+          <value>com.sun.star.presentation.PresentationDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.text.TextDocument</value>
+        </prop>
+        <prop oor:name="Title" oor:type="xs:string">
+          <value/>
+          <value xml:lang="en">Options</value>
+        </prop>
+      </node>
+      <node oor:name="m5" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>org.libreoffice.zoho.zoho:Local</value>
+        </prop>
+        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+          <value/>
+        </prop>
+        <prop oor:name="Target" oor:type="xs:string">
+          <value>_self</value>
+        </prop>
+        <prop oor:name="Context" oor:type="xs:string">
+          <value>com.sun.star.presentation.PresentationDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.text.TextDocument</value>
+        </prop>
+        <prop oor:name="Title" oor:type="xs:string">
+          <value/>
+          <value xml:lang="en">Local</value>
+        </prop>
+      </node>
+
+      </node>
+    </node>
+    <node oor:name="Images">
+      <node oor:name="org.libreoffice.zoho.zoho.import.images" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>org.libreoffice.zoho.zoho:Import</value>
+        </prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageBigURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageSmallHCURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageBigHCURL">
+            <value/>
+          </prop>
+        </node>
+      </node>
+      <node oor:name="org.libreoffice.zoho.zoho.export.images" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>org.libreoffice.zoho.zoho:Export</value>
+        </prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageBigURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageSmallHCURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageBigHCURL">
+            <value/>
+          </prop>
+        </node>
+      </node>
+      <node oor:name="org.libreoffice.zoho.zoho.share.images" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>org.libreoffice.zoho.zoho:Share</value>
+        </prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageBigURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageSmallHCURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageBigHCURL">
+            <value/>
+          </prop>
+        </node>
+      </node>
+      <node oor:name="org.libreoffice.zoho.zoho.options.images" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>org.libreoffice.zoho.zoho:Options</value>
+        </prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageBigURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageSmallHCURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageBigHCURL">
+            <value/>
+          </prop>
+        </node>
+      </node>
+      <node oor:name="org.libreoffice.zoho.zoho.local.images" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>org.libreoffice.zoho.zoho:Local</value>
+        </prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageBigURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageSmallHCURL">
+            <value/>
+          </prop>
+          <prop oor:name="ImageBigHCURL">
+            <value/>
+          </prop>
+        </node>
+      </node>
+      
+      </node>
+  </node>
+</oor:component-data>
